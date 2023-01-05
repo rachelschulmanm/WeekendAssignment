@@ -132,7 +132,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 500vh;
+  height: 410vh;
 }
 nav {
   border-bottom: 2px dashed #a24542;
@@ -154,6 +154,7 @@ nav {
 .logo img {
   width: 40%;
 }
+
 .basic {
   display: flex;
   justify-content: center;
@@ -175,4 +176,16 @@ nav {
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
+  text-align: center;
 }
+.card button {
+  background-color: #e6cecd;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* .card img:hover {
+  transform: scale(
+    1.5
+  ); 
+} */
