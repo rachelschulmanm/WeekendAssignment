@@ -1,0 +1,62 @@
+body {
+  height: 35vh;
+}
+
+.pic {
+  background-image: url("/img/about.jpg");
+
+  height: 20vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  color: #a24542;
+  margin: 0;
+  font-size: 8rem;
+  text-align: center;
+  overflow: auto;
+}
+p {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+ul {
+  display: flex;
+
+  text-align: center;
+  list-style: none;
+}
+li {
+  display: flex;
+
+  text-align: center;
+  padding: 10px;
+}
+a {
+  color: #a24542;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+@media (min-width: 600px) {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  h1 {
+    color: black;
+  }
+}

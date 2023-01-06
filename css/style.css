@@ -190,16 +190,21 @@ body {
   justify-content: center;
   justify-content: space-around;
   margin-top: 2rem;
+  font-family: "Trirong", serif;
+  color: black;
 }
 .basic > li > button {
+  position: relative;
   margin-bottom: 2rem;
   padding: 0.5rem 1rem;
-  background-color: #e1b1af;
+  background-color: rgb(167, 101, 101);
   color: #fff;
   border: 0 solid red;
   border-radius: 2rem;
   cursor: pointer;
+  color: black;
 }
+
 .cards {
   width: 100%;
   display: grid;
@@ -246,42 +251,29 @@ form {
   margin-right: 1rem;
   margin-top: 1rem;
 }
+
 @media (max-width: 900px) and (min-width: 600px) {
   body {
     position: relative;
   }
-  .logo img {
-    width: 40%;
-  }
   .cards {
-    width: 100%;
-    display: grid;
-    justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    text-align: center;
-    position: relative;
+  }
+  .basic > li > button {
+    padding: 5px 30px;
   }
 }
+
 @media (min-width: 900px) {
   body {
     position: relative;
   }
-  .logo img {
-    width: 40%;
+  .basic > li > button {
+    padding: 7px 40px;
   }
   .cards {
-    width: 100%;
-    display: grid;
-    justify-content: space-between;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    text-align: center;
-    position: relative;
   }
   h4 {
     font-family: "Sofia", sans-serif;
@@ -294,16 +286,11 @@ form {
   body {
     position: relative;
   }
+  .basic > li > button {
+    padding: 10px 50px;
+  }
   .cards {
-    width: 100%;
-    display: grid;
-    justify-content: space-between;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    text-align: center;
-    position: relative;
   }
   .navbar {
     margin-top: 10px;
