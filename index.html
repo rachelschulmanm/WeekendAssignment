@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/style1.css" />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,21 +22,44 @@
       src="https://kit.fontawesome.com/6f1a430567.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Rachel Shulman</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <i class="fa-solid fa-basket-shopping"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
+    <div>
+      <nav class="navbar">
+        <div class="nav">
+          <div class="logo">
+            <i
+              id="basket"
+              class="fa-solid fa-basket-shopping"
+              style="color: #c9c9c9"
+            ></i>
+            <!-- <i id="mag" class=" fa-solid fa-magnifying-glass" style="color: #c9c9c9;" ></i> -->
 
-        <img src="img/logo.png" alt="" />
-        <div class="nav right">
-          <i class="fa-solid fa-bars"></i>
+            <img src="img/logo.png" alt="" />
+            <div class="nav-right">
+              <div class="menu-wrap">
+                <input type="checkbox" class="toggler" />
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                  <div>
+                    <div>
+                      <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
       <ul class="basic">
-        <li><button>All</button></li>
+        <!-- <li><button>All</button></li> -->
         <li><button>Bracelets</button></li>
         <li><button>Rings</button></li>
         <li><button>earrings</button></li>
@@ -40,9 +70,9 @@
         <div class="card1 card">
           <img id="ring" src="img/1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container1 desc">
-            <h4><b>Gold ring</b></h4>
+            <h4><b>Silver Heart</b></h4>
             <p>very spaicail</p>
-            <p>70 $</p>
+            <p>12 $</p>
             <button class="add baskit">add to baskit</button>
           </div>
         </div>
@@ -52,7 +82,7 @@
           <div class="container1 desc">
             <h4><b>Gold ring</b></h4>
             <p>very spaicail</p>
-            <p>70 $</p>
+            <p>30 $</p>
             <button class="add baskit">add to baskit</button>
           </div>
         </div>
@@ -61,7 +91,7 @@
           <div class="container1 desc">
             <h4><b>Gold ring</b></h4>
             <p>very spaicail</p>
-            <p>70 $</p>
+            <p>48 $</p>
             <button class="add baskit">add to baskit</button>
           </div>
         </div>
@@ -70,7 +100,7 @@
           <div class="container1 desc">
             <h4><b>Gold ring</b></h4>
             <p>very spaicail</p>
-            <p>70 $</p>
+            <p>52 $</p>
             <button class="add baskit">add to baskit</button>
           </div>
         </div>
@@ -242,7 +272,7 @@
             <h4><b>Gold ring</b></h4>
             <p>very spaicail</p>
             <p>70 $</p>
-            <button class="add baskit">add to baskit</button>
+            <button class="add basket">add to basket</button>
           </div>
         </div>
         <div class="card24 card">
@@ -251,23 +281,36 @@
             <h4><b>Gold ring</b></h4>
             <p>very spaicail</p>
             <p>70 $</p>
-            <button class="add baskit">add to baskit</button>
+            <button class="add basket">add to basket</button>
           </div>
         </div>
       </div>
 
       <footer>
+        <form class="form" action="/action_page.php">
+          <p>For any problem please fill free to let us know!</p>
+          <label for="fname">Full name:</label><br />
+          <input type="text" id="fname" name="fname" value="John" /><br />
+          <label for="cars">Subject:</label><br />
+          <select id="option" name="Subject">
+            <option value="Return">Return</option>
+            <option value="Refund">Refund</option>
+            <option value="Broken Jewelry">Broken Jewelry</option>
+            <option value="Else..">Else..</option>
+          </select>
+          <br />
+          <label for="lname">Message:</label><br />
+
+          <textarea name="message" rows="8" cols="20"> </textarea><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </footer>
+      <div class="follow">
         <div class="follow">follow us on:</div>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href=""><i class="fa-brands fa-facebook"></i></a>
         <a href=""><i class="fa-brands fa-youtube"></i></a>
-        contact us by:
-        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="mailto:pikud162@gmail.com?subject = Feedback&body = Message">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-        </a>
-      </footer>
-    </nav>
+      </div>
+    </div>
   </body>
 </html>
