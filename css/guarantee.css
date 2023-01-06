@@ -3,7 +3,6 @@ body {
 
 .pic {
   background-image: url("/img/about.jpg");
-
   height: 20vh;
   width: 100vw;
   background-position: center;
@@ -12,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 h1 {
   color: #a24542;
@@ -27,20 +27,32 @@ p {
 }
 ul {
   display: flex;
-
+  justify-content: center;
   text-align: center;
   list-style: none;
+}
+.pic ul {
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+
+a:hover,
+.pic ul .current {
+  color: #680906;
+}
+a {
+  color: rgba(150, 0, 0, 0.5);
+
+  font-size: 1.3rem;
+  padding: 0;
+  text-decoration: none;
 }
 li {
   display: flex;
 
   text-align: center;
   padding: 10px;
-}
-a {
-  color: #a24542;
-  font-size: 1.3rem;
-  text-decoration: none;
 }
 ul {
   display: grid;
@@ -53,8 +65,13 @@ ul {
   display: block;
   object-fit: cover;
 }
-/* @media (max-max: 600px) {
-  a {
-    font-size: 5rem;
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
   }
-} */
+  ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
