@@ -3,8 +3,9 @@
 } */
 
 .pic {
-  background-image: url("/img/about.jpg");
-  height: 20vh;
+  background-image: url("/img/EIG1.gif");
+
+  height: 50vh;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,9 +13,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  align-items: center;
 }
-
 h1 {
   color: #a24542;
   margin: 0;
@@ -63,9 +62,13 @@ p {
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
+    font-size: 2rem;
   }
   h1 {
     color: black;
     font-size: 8rem;
+  }
+  p {
+    font-size: 2rem;
   }
 }

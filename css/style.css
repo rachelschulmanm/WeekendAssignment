@@ -105,6 +105,7 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
@@ -153,7 +154,7 @@ body {
   /* position: fixed; */
   display: flex;
   justify-content: center;
-  height: 150vh;
+  /* height: 150vh; */
   /* width: 100%; */
 }
 
@@ -186,6 +187,11 @@ body {
 }
 .basket {
   width: 40%;
+}
+#mag {
+  animation-name: ani;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
 }
 
 .basic {
@@ -243,13 +249,13 @@ footer {
 }
 
 form {
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   text-align: center;
 }
 .follow {
   display: flex;
-  margin-right: 1rem;
-  margin-top: 1rem;
+  margin: 1rem;
+  /* margin-top: 1rem; */
   justify-content: center;
 }
 .follow a {
@@ -327,5 +333,15 @@ form {
   }
   .card img:hover {
     transform: scale(2);
+  }
+}
+
+@keyframes ani {
+  50% {
+    color: #e1b1af;
+  }
+
+  100% {
+    color: #a24542;
   }
 }
